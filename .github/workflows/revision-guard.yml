@@ -10,7 +10,7 @@ permissions:
 jobs:
   guard:
     if: github.event.review.state == 'changes_requested'
-    runs-on: hl-sdk-py-lin-md
+    runs-on: ubuntu-latest
     permissions:
       pull-requests: write
       issues: write
